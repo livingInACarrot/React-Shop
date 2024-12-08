@@ -1,0 +1,129 @@
+.sidebar {
+  background-color: #f7f2ef;
+  padding: 16px;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  width: 18%;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transform: translateX(-100%);
+  opacity: 1;
+  pointer-events: auto;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 4px;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sidebar.closed {
+  transform: translateX(-110%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sidebar input,
+.sidebar-label,
+.sidebar select,
+.sidebar button {
+  height: 30px;
+  display: block;
+  margin-bottom: 10px;
+  border: none;
+  color: #857979;
+  background-color: #fff;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 4px;
+}
+
+.sidebar input,
+.sidebar select {
+  width: 220px;
+}
+
+.sidebar-label,
+.sidebar button {
+  width: 268px;
+}
+
+.sidebar.closed input,
+.sidebar.closed label,
+.sidebar.closed select,
+.sidebar.closed button {
+  display: block;
+  margin-bottom: 10px;
+  opacity: 0;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+/*
+.sidebar-item {
+  width: 240px;
+  height: 30px;
+  display: block;
+  margin-bottom: 10px;
+  color: #857979;
+  background-color: #fff;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 4px;
+}
+
+.sidebar select {
+  width: 240px;
+  height: 30px;
+  color: #857979;
+}
+*/
+.sidebar select option {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.sidebar select option:hover {
+  background-color: #c29f89;
+  color: #333;
+}
+
+.sidebar select option:checked {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+/*
+.sidebar input[type='text']::-webkit-input-placeholder {
+  width: 400px;
+  height: 30px;
+  color: #857979;
+}
+*/
+.sidebar-checkbox {
+  position: fixed;
+  top: 55px;
+  left: 150px;
+}
+
+.sidebar button {
+  background-color: #ead4c6;
+  color: #333;
+  text-align: center;
+}
+
+.sidebar-delete-1 {
+  position: fixed;
+  top: 16px;
+  left: 250px;
+}
+
+.sidebar-delete-2 {
+  position: fixed;
+  top: 98px;
+  left: 250px;
+}
